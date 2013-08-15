@@ -26,7 +26,11 @@ class TranslationServiceProvider extends Provider
                 'translator',
                 function (Translator $translator, Application $app) {
                     if (isset($app['translation.files'])) {
-                        foreach ($app['translation.files'] as $class => $files) {
+                        $app['translator.files'] = $app['translation.files'];
+                    }
+
+                    if (isset($app['translator.files'])) {
+                        foreach ($app['translator.files'] as $class => $files) {
                             $name = explode('\\', $class);
                             $name = array_pop($name);
 
