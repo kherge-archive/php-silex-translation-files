@@ -1,0 +1,50 @@
+{
+    "name": "herrera-io/silex-translation-files",
+    "description": "A Silex service provider for using translation files.",
+    "license": "MIT",
+    "keywords": ["silex", "translation"],
+    "homepage": "https://github.com/herrera-io/php-silex-translation-files",
+    "authors": [
+        {
+            "name": "Kevin Herrera",
+            "email": "kevin@herrera.io",
+            "homepage": "http://kevin.herrera.io/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/herrera-io/php-silex-translation-files/issues"
+    },
+
+    "require": {
+        "php": ">=5.3.3",
+        "silex/silex": "~1.0",
+        "symfony/config": "~2.3",
+        "symfony/translation": "~2.3"
+    },
+
+    "require-dev": {
+        "herrera-io/go": "~2.0",
+        "herrera-io/phpunit-test-case": "~1.0",
+        "phpunit/phpunit": "~3.7"
+    },
+
+    "suggest": {
+        "symfony/yaml": "For loading YAML translation files."
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Herrera\\Silex\\Provider": "src/lib"
+        }
+    },
+
+    "config": {
+        "bin-dir": "bin",
+        "vendor-dir": "src/vendors"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+/.idea/
+/bin/
+/coverage/
+/src/vendors/
+
+/*.iml
+/*.log
+/composer.lock
