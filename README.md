@@ -39,4 +39,5 @@ Use Composer:
 
     $ composer.phar require "herrera-io/silex-translation-files=~1.0"
 
+[Silex]: http://silex.sensiolabs.org/
 [Build Status]: https://travis-ci.org/herrera-io/php-silex-translation-files.png
